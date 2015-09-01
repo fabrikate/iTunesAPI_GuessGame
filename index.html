@@ -8,5 +8,24 @@
   <title>Song Guessing Game</title>
 </head>
 <body>
+	<audio id="audio_preview" src=""></audio>
+	<div id="gamePlay">
+		<h2>Melody Musings</h2>
+		<p>While the music is playing guess the artist, song name or album.</p>
+		<form id="playerGuessForm" >
+			<input type='text' id="playerGuess" placeholder="I think this is..." />
+			<button id='nextBtn'>Reset</button>
+		</form>
+		<p id='showMsg'></p>
+		<p id='finalTally'></p>
+		<img src="" alt="album artwork"/>
+	</div>
+	<div id="counter">
+		<p>Guesses Right: <span id="guessRight"></p>
+		<p>Guesses Wrong:  <span id="guessWrong"></p>
+		<ul id='playedSongs'>Played Songs:
+		</ul>
+	</div>
+
 </body>
 </html>
