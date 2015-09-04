@@ -1,4 +1,4 @@
-$(function() {
+ $(function() {
 
   var songIds =
   ["995535015", "966411602", "823593456", "956689796", "78964625", "349659857",
@@ -11,7 +11,6 @@ $(function() {
    var guessRight = 0, guessWrong = 0;
    var playedSongs = [];
    $('img').hide();
-   $('#playedSongs').hide();
 
 	function loadAjax() {
 	  $.ajax({
@@ -94,15 +93,9 @@ $(function() {
 		// create a list of the song names being played
 		var i = 0;
 		//get the list tow show
-		if (songIds.length <= 1) {
-			playedSongs.forEach(function() {
-				$('#playedSongs').append('<li>' + playedSongs[i] + '</li>');
-				i++;
-		})
+			$('#playedSongs').append('<li>' + playedSongs[i] + '</li>');
+			i++;
 			$('#finalTally').text('You got ' + guessRight + '/29 correct!');
-			$('#playedSongs').fadeIn();
 
-		}
 	}
 });
-

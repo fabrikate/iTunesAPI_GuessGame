@@ -1,0 +1,23 @@
+{
+  "name": "itunes_song_guessing_game",
+  "version": "1.0.0",
+  "description": "In this project you will use the iTunes lookup api to get a song url and then play the song for the user.  The user should guess the song title, artist name or album.",
+  "main": "songs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabrikate/iTunesAPI_GuessGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabrikate/iTunesAPI_GuessGame/issues"
+  },
+  "homepage": "https://github.com/fabrikate/iTunesAPI_GuessGame#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1"
+  }
+}
